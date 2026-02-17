@@ -57,12 +57,12 @@ const domeFooterLinks: NavHeaderLink[] = [
       {
         label: 'FOOTER.forCustomers',
         url: '#for-customers',
-        isRouterLink: false
+        isRouterLink: true
       },
       {
         label: 'FOOTER.forProviders',
         url: '#for-providers',
-        isRouterLink: false
+        isRouterLink: true
       },
     ],
 
@@ -105,7 +105,7 @@ const domeFooterLinks: NavHeaderLink[] = [
       , {
         label: 'FOOTER.faqs',
         url: '/faq',
-        isRouterLink: false
+        isRouterLink: true
       }
     ]
   }
