@@ -1,5 +1,5 @@
-import {NavLink, ThemeConfig} from './theme.interfaces';
 import { environment } from '../../environments/environment';
+import { NavHeaderLink, NavLink, ThemeConfig } from './theme.interfaces';
 
 const domeHeaderLinks: NavLink[] = [
   {
@@ -37,10 +37,79 @@ const domeHeaderLinks: NavLink[] = [
 ];
 
 
-const domeFooterLinks: NavLink[] = [
-  { label: 'FOOTER._privacy', url: 'assets/documents/privacy.pdf', isRouterLink: false },
-  { label: 'FOOTER._cookies', url: 'assets/documents/cookies.pdf', isRouterLink: false },
-  { label: 'FOOTER._licensing', url: 'assets/documents/terms.pdf', isRouterLink: false },
+const domeFooterLinks: NavHeaderLink[] = [
+  {
+    label: 'FOOTER.aboutTitle',
+    navLinks: [
+      { label: 'FOOTER._about', url: '/about', isRouterLink: true },
+      { label: 'FOOTER.governance', url: '/governance', isRouterLink: true },
+      { label: 'FOOTER.partners', url: 'https://dome-project.eu/about/#partners', isRouterLink: false },
+    ]
+  },
+  {
+    label: 'FOOTER.marketplaceTitle',
+    navLinks: [
+      {
+        label: 'FOOTER.browse',
+        url: '/search',
+        isRouterLink: true
+      },
+      {
+        label: 'FOOTER.forCustomers',
+        url: '#for-customers',
+        isRouterLink: false
+      },
+      {
+        label: 'FOOTER.forProviders',
+        url: '#for-providers',
+        isRouterLink: false
+      },
+    ],
+
+  },
+  {
+    label: 'FOOTER.resourcesTitle',
+    navLinks: [
+      {
+        label: 'FOOTER._licensing',
+        url: '/assets/documents/terms.pdf',
+        isRouterLink: false
+      },
+      {
+        label: 'FOOTER._privacy',
+        url: '/assets/documents/privacy.pdf',
+        isRouterLink: false
+      },
+      {
+        label: 'FOOTER._cookies',
+        url: '/assets/documents/cookies.pdf',
+        isRouterLink: false
+      },
+    ],
+
+  },
+
+  {
+    label: 'FOOTER.resourcesTitle',
+    navLinks: [
+      {
+        label: 'FOOTER.documentation',
+        url: 'https://knowledgebase.dome-marketplace-prd.org/',
+        isRouterLink: false
+      },
+      {
+        label: 'FOOTER.support',
+        url: 'https://dome-marketplace.eu/contact-us',
+        isRouterLink: false
+      }
+      , {
+        label: 'FOOTER.faqs',
+        url: '/faq',
+        isRouterLink: false
+      }
+    ]
+  }
+
 ];
 
 
