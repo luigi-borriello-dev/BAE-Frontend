@@ -88,7 +88,6 @@ const domeFooterLinks: NavHeaderLink[] = [
     ],
 
   },
-
   {
     label: 'FOOTER.resourcesTitle',
     navLinks: [
@@ -124,6 +123,7 @@ export const DOME_THEME_CONFIG: ThemeConfig = {
   links: {
     headerLinks: domeHeaderLinks,
     footerLinks: domeFooterLinks,
+    footerLinksColsNumber: domeFooterLinks.length,
 
     linkedin: environment.DOME_LINKEDIN,
     youtube: environment.DOME_YOUTUBE,

@@ -30,6 +30,7 @@ export interface NavLink {
 export interface ThemeLinkConfig {
   headerLinks?: NavLink[];
   footerLinks?: NavHeaderLink[];
+  footerLinksColsNumber?: number;
 
   // Social networks
   linkedin?: string;

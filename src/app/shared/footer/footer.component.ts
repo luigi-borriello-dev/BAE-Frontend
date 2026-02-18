@@ -13,6 +13,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 import { EventMessageService } from '../../services/event-message.service';
 import { NavHeaderLink } from '../../themes';
 
+
 @Component({
   selector: 'bae-footer',
   templateUrl: './footer.component.html',
@@ -29,6 +30,7 @@ export class FooterComponent implements OnInit, OnDestroy {
 
   socialLinks: { icon: any; url: string }[] = [];
   footerLinks: NavHeaderLink[] = [];
+  columns: number;
 
   constructor(
     private themeService: ThemeService,
@@ -66,8 +68,7 @@ export class FooterComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.unSub))
       .subscribe((theme) => {
         this.footerLinks = theme?.links?.footerLinks || [];
-
-        console.log(this.footerLinks)
+        this.columns = theme?.links?.footerLinksColsNumber || 0;
 
         this.socialLinks = [];
 
