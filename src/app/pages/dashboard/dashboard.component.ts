@@ -19,6 +19,7 @@ import { ThemeService } from 'src/app/services/theme.service';
 import { EuropeTrademarkComponent } from 'src/app/shared/europe-trademark/europe-trademark.component';
 import { ThemeConfig } from 'src/app/themes';
 import { environment } from 'src/environments/environment';
+import { DashboardWhatsDome } from './dashboard-whatsdome/dashboard-whatsdome.component';
 
 interface Stats {
   services: number;
@@ -30,7 +31,7 @@ interface Stats {
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
   standalone: true,
-  imports: [TranslateModule, SlicePipe, EuropeTrademarkComponent, ReactiveFormsModule, FeaturedComponent, NgClass],
+  imports: [TranslateModule, SlicePipe, EuropeTrademarkComponent, ReactiveFormsModule, FeaturedComponent, NgClass, DashboardWhatsDome],
 })
 export class DashboardComponent implements OnInit, OnDestroy {
   private unSub = new Subject<void>();
