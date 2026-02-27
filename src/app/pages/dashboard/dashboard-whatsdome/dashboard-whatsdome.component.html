@@ -1,84 +1,82 @@
-<!-- FULL SCREEN SECTION -->
-<section class="relative w-screen h-screen overflow-hidden font-[Blinker]">
-  <!-- ================= BACKGROUND ================= -->
-  <div class="absolute inset-0 z-0">
-    <div class="ellipse e2541"></div>
-    <div class="ellipse e2542"></div>
-    <div class="ellipse e2540"></div>
-    <div class="ellipse e2543"></div>
+<section class="relative w-screen min-h-[100svh] font-[Blinker] overflow-x-hidden overflow-y-auto">
+  <div class="absolute inset-0 z-0 min-h-full">
+    <div class="ellipse effect1"></div>
+    <div class="ellipse effect2"></div>
+    <div class="ellipse effect3"></div>
+    <div class="ellipse effect4"></div>
+
+    <img src="assets/logos/DOME_Icon_White.svg" alt="" aria-hidden="true" class="dome-watermark hidden md:block" />
 
     <div class="blur-overlay"></div>
   </div>
 
-  <!-- ================= CENTERED CONTENT ================= -->
-  <div class="relative z-10 h-full w-full flex items-center justify-center">
-    <!-- content width container -->
+  <div class="relative z-10 w-full min-h-[100svh] grid place-items-center py-10 md:py-0">
     <div class="w-full max-w-[1180px] px-6 sm:px-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-        <!-- LEFT -->
         <div class="lg:col-span-5">
           <h1 class="text-[clamp(36px,3.2vw,46px)] font-extrabold leading-[1.08] tracking-[-0.02em] text-slate-900">
-            What is DOME<br />
-            Marketplace?
+            {{ "dashboard.whatsdome-section._title" | translate }}
           </h1>
 
           <p class="mt-10 max-w-[420px] text-[15px] leading-7 text-slate-600">
-            DOME is the European marketplace that provides a unified environment
-            where trust, compliance, and interoperability form the foundation of
-            how digital services are published, compared, and used across Europe.
+            {{ "dashboard.whatsdome-section._desc" | translate }}
           </p>
         </div>
 
-        <!-- RIGHT -->
         <div class="lg:col-span-7">
           <div class="flex flex-col gap-12">
-            <!-- ITEM -->
-            <div class="flex gap-6">
-              <div class="icon-badge"></div>
+            <div class="flex items-center gap-6 hover-card">
+              <div class="icon-badge">
+                <fa-icon [icon]="faShieldCheck"></fa-icon>
+              </div>
               <div>
                 <h3 class="feature-title">
-                  Trusted, Sovereign Digital Ecosystem
+                  {{ "dashboard.whatsdome-section.features.trusted.title" | translate }}
                 </h3>
                 <p class="feature-desc">
-                  DOME ensures services operate under EU rules for security,
-                  data protection, and sovereignty.
+                  {{ "dashboard.whatsdome-section.features.trusted.desc" | translate }}
                 </p>
               </div>
             </div>
 
-            <div class="flex gap-6">
-              <div class="icon-badge"></div>
+            <div class="flex items-center gap-6 hover-card">
+              <div class="icon-badge">
+                <fa-icon [icon]="faEye"></fa-icon>
+              </div>
               <div>
                 <h3 class="feature-title">
-                  Transparency and Comparability
+                  {{ "dashboard.whatsdome-section.features.transparency.title" | translate }}
                 </h3>
                 <p class="feature-desc">
-                  Consistent documentation and pricing clarity enable easy
-                  comparison of services.
+                  {{ "dashboard.whatsdome-section.features.transparency.desc" | translate }}
                 </p>
               </div>
             </div>
 
-            <div class="flex gap-6">
-              <div class="icon-badge"></div>
+            <div class="flex items-center gap-6 hover-card">
+              <div class="icon-badge">
+                <fa-icon [icon]="faRotate"></fa-icon>
+              </div>
               <div>
                 <h3 class="feature-title">
-                  Interoperability and Federation
+                  {{ "dashboard.whatsdome-section.features.interoperability.title" | translate }}
                 </h3>
                 <p class="feature-desc">
-                  Shared standards enable seamless discovery and collaboration.
+                  {{ "dashboard.whatsdome-section.features.interoperability.desc" | translate }}
                 </p>
               </div>
             </div>
 
-            <div class="flex gap-6">
-              <div class="icon-badge"></div>
+            <div class="flex items-center gap-6 hover-card">
+              <div class="icon-badge">
+                <fa-icon [icon]="faMessages"></fa-icon>
+              </div>
               <div>
                 <h3 class="feature-title">
-                  Fair and Open Market Access
+                  {{ "dashboard.whatsdome-section.features.fairAccess.title" | translate }}
                 </h3>
                 <p class="feature-desc">
-                  Removes barriers to entry and prevents vendor lock-in.
+                  {{ "dashboard.whatsdome-section.features.fairAccess.desc" | translate }}
                 </p>
               </div>
             </div>

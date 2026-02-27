@@ -2,6 +2,28 @@
   "_yes": "Yes",
   "_no": "No",
   "dashboard": {
+    "whatsdome-section": {
+      "_title": "What is DOME Marketplace?",
+      "_desc": "DOME is the European marketplace that provides a unified environment where trust, compliance, and interoperability form the foundation of how digital services are published, compared, and used across Europe.",
+      "features": {
+        "trusted": {
+          "title": "Trusted, Sovereign Digital Ecosystem",
+          "desc": "DOME ensures services operate under EU rules for security, data protection, and sovereignty, creating a reliable environment for digital operations across Europe."
+        },
+        "transparency": {
+          "title": "Transparency and Comparability",
+          "desc": "Consistent documentation, pricing clarity, and shared trust indicators make it easy to understand, compare, and assess digital services."
+        },
+        "interoperability": {
+          "title": "Interoperability and Federation",
+          "desc": "DOME connects multiple marketplaces and providers through shared standards, enabling seamless discovery, integration, and cross-market collaboration."
+        },
+        "fairAccess": {
+          "title": "Fair and Open Market Access",
+          "desc": "The ecosystem removes barriers to entry, supports SMEs, and prevents vendor lock-in, ensuring all participants can compete and grow on equal terms."
+        }
+      }
+    },
     "nav": {
       "forCustomers": "For Customers",
       "forProviders": "For Providers",
