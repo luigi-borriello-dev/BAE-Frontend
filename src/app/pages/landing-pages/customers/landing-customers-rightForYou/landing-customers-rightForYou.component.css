@@ -1,0 +1,144 @@
+.right-for-you-section {
+  min-height: 920px;
+}
+
+.right-for-you-layout {
+  display: grid;
+  grid-template-columns: 453px 554px;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.right-for-you-copy {
+  padding-top: 80px;
+}
+
+.right-for-you-watermark {
+  position: absolute;
+  width: 511px;
+  height: auto;
+  left: -124px;
+  bottom: -142px;
+  opacity: 0.5;
+}
+
+.right-for-you-cards-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.scroll-wrapper {
+  position: relative;
+  width: 554px;
+}
+
+.scroll-container {
+  height: 636px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 12px;
+}
+
+.scroll-card {
+  width: 548px;
+  background: #ebf0f7;
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.2s ease;
+}
+
+.scroll-indicator {
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 6px;
+  border-radius: 16px 0 0 16px;
+  background: linear-gradient(180deg, #2d58a7 0%, #00add3 100%);
+  z-index: 3;
+  transition:
+    transform 0.26s ease,
+    height 0.26s ease,
+    opacity 0.18s ease;
+  will-change: transform, height;
+}
+
+.scroll-fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.scroll-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+@media (max-width: 1279px) {
+  .right-for-you-layout {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .right-for-you-copy {
+    padding-top: 0;
+    max-width: 640px;
+  }
+
+  .right-for-you-cards-col {
+    justify-content: flex-start;
+  }
+
+  .scroll-wrapper {
+    width: 100%;
+    max-width: 554px;
+  }
+
+  .scroll-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .right-for-you-section {
+    min-height: auto;
+  }
+
+  .right-for-you-watermark {
+    width: 320px;
+    left: -90px;
+    bottom: -100px;
+    opacity: 0.35;
+  }
+
+  .scroll-container {
+    height: 520px;
+  }
+}

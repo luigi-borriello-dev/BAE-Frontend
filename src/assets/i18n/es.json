@@ -205,6 +205,168 @@
       "_more": "Read more"
     }
   },
+  "LANDINGPAGE": {
+    "customers": {
+      "faqs": {
+        "title": "FAQs",
+        "_items": {
+          "eligibility": {
+            "question": "Am I eligible to use the DOME Marketplace as a customer?",
+            "answer": "Any organisation interested in discovering, comparing, and procuring digital services through the DOME Marketplace can register as a customer."
+          },
+          "trustworthiness": {
+            "question": "How does DOME ensure the trustworthiness of the services listed on the Marketplace?",
+            "answerP1": "Services listed on the DOME Marketplace are evaluated against the DOME compliance framework.",
+            "answerP2": "Each service is assigned a compliance profile:",
+            "baselineTitle": "Baseline: ",
+            "baselineText": "Mandatory compliance via self-attestation.",
+            "professionalTitle": "Professional / Professional+: ",
+            "professionalText": "Verified certifications and compliance evidence.",
+            "answerP3": "This allows transparent comparison and better decisions.",
+            "answerP4a": "Services that do not meet the ",
+            "answerP4b": "Baseline Compliance Criteria",
+            "answerP4c": " are not published."
+          },
+          "fee": {
+            "question": "Do I need to pay a fee to become a DOME Marketplace customer?",
+            "answer": "Fees depend on the platform model and onboarding."
+          },
+          "process": {
+            "question": "What is the process for becoming a DOME Marketplace customer?",
+            "answer": "Registration, verification and acceptance of terms."
+          },
+          "provider": {
+            "question": "Can I also be a provider?",
+            "answer": "Yes, after completing provider requirements."
+          },
+          "dispute": {
+            "question": "What happens in case of a dispute?",
+            "answer": "Resolution follows contractual and marketplace rules."
+          }
+        }
+      },
+      "finalCta": {
+        "titleStart": "Make ",
+        "titleAccent": "procurement easier",
+        "titleEnd": ", without losing control",
+        "description": "Join the marketplace designed for transparent, sovereign digital service procurement across Europe.",
+        "primaryCta": "Start Your Customer Journey",
+        "secondaryCta": "Request more info"
+      },
+      "procureSteps": {
+        "_titleStart": "Procure in a ",
+        "_titleAccent": "few steps",
+        "_subtitle": "A simple, structured journey from discovery to procurement — built for trust at every stage.",
+        "items": {
+          "step1": {
+            "_title": "Create your customer profile"
+          },
+          "step2": {
+            "_title": "Search and compare verified services"
+          },
+          "step3": {
+            "_title": "Buy “off-the-shelf” or request a tailored offer"
+          },
+          "step4": {
+            "_title": "Engage providers and complete procurement"
+          }
+        }
+      },
+      "buyOptions": {
+        "_title": "Choose how you buy",
+        "_subtitle": "Europe’s digital procurement landscape is evolving.",
+        "cards": {
+          "offTheShelf": {
+            "_titleLine1": "Buy “off-the-shelf”",
+            "_titleLine2": "services",
+            "_description": "Select pre-defined offerings with clear specifications, pricing, and terms — contract directly with providers."
+          },
+          "tailored": {
+            "_badge": "Most popular",
+            "_titleLine1": "Request a tailored",
+            "_titleLine2": "offer",
+            "_description": "Define requirements upfront, centralise clarifications, and receive structured proposals."
+          },
+          "tender": {
+            "_titleLine1": "Run a structured",
+            "_titleLine2": "tender-like process",
+            "_description": "Publish sourcing requests, receive comparable responses, and support transparent internal decision-making."
+          }
+        }
+      },
+      "hero": {
+        "_badge": "For customers",
+        "_titleLine1": "Procure Across Europe.",
+        "_titleAccent": "Buy with Trust",
+        "_titleLine2": " Built In.",
+        "_desc": "Discover verified, sovereignty-ready digital services and use clear trust evidence to shortlist faster and procure with confidence.",
+        "_ctaPrimary": "Start your customer journey",
+        "_ctaSecondary": "Request more info"
+      },
+      "rightForYou": {
+        "_titleStart": "Is ",
+        "_titleAccent": "DOME",
+        "_titleEnd": " right for you?",
+        "_desc": "DOME is designed for organisations that prioritise trust, sovereignty, and structured supplier evaluation.",
+        "_regulatedIndustriesTitle": "Regulated Industries",
+        "_regulatedIndustriesDesc": "Finance, insurance, healthcare, energy, telecom, transport.",
+        "_enterprisesTitle": "Enterprises (EU-First or Risk-Aware Procurement)",
+        "_enterprisesDesc": "Medium and large organisations seeking stronger control and comparable supplier selection.",
+        "_publicSectorTitle": "Public Sector and Publicly Funded Buyers",
+        "_publicSectorDesc": "Institutions that need traceable, policy-aligned procurement pathways and transparent service documentation.",
+        "_complianceTeamsTitle": "Compliance, Risk, and Governance Functions",
+        "_complianceTeamsDesc": "Teams that need clearer supplier evidence, sovereignty indicators, and structured evaluation inputs.",
+        "_structuredProcurementTitle": "Buyers Needing Structured Digital Procurement",
+        "_structuredProcurementDesc": "Organisations moving from fragmented discovery toward a more standardised way to compare, shortlist, and procure digital services."
+      },
+      "whyJoin": {
+        "_title": "Why join DOME?",
+        "_subtitle": "Europe’s digital procurement landscape is evolving.",
+        "_dataTitleStart": "Data ",
+        "_dataTitleAccent": "control",
+        "_dataDesc": "Identify services aligned with European data sovereignty expectations.",
+        "_crossTitleStart": "Stronger ",
+        "_crossTitleAccent": "cross-border access",
+        "_crossDesc": "Engage providers across Europe through a trusted marketplace environment.",
+        "_riskTitleStart": "Lower ",
+        "_riskTitleAccent": "supplier",
+        "_riskTitleEnd": " risk",
+        "_riskDesc": "Access structured service information and documentation to assess trusted providers.",
+        "_actionTitleStart": "Turn discovery ",
+        "_actionTitleAccent": "into action",
+        "_actionDesc": "Move from exploring the market to requesting offers or directly purchasing services."
+      },
+      "trusted": {
+        "_titleStart": "Access Trusted ",
+        "_titleAccent": "Digital Services",
+        "_titleEnd": " — All in One Place",
+        "_desc": "DOME connects you to a growing ecosystem of European providers validated against EU regulation.",
+        "values": {
+          "trustStandardised": "Trust is standardised",
+          "evidenceVisible": "Evidence is visible",
+          "comparisonSimplified": "Comparison is simplified"
+        },
+        "cards": {
+          "verifiedServices": {
+            "title": "Verified services",
+            "desc": "A consolidated, searchable catalogue of verified services."
+          },
+          "trustIndicators": {
+            "title": "Trust indicators",
+            "desc": "Clear trust indicators for security, compliance, and data sovereignty."
+          },
+          "documentation": {
+            "title": "Documentation",
+            "desc": "Transparent documentation and structured service descriptions."
+          },
+          "crossBorderAccess": {
+            "title": "Cross-border access",
+            "desc": "Cross-border access through federated European marketplaces."
+          }
+        }
+      }
+    }
+  },
   "GALLERY": {
     "_title": "Featured offerings",
     "_explore": "Explore marketplace",
