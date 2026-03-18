@@ -210,6 +210,19 @@
       "_more": "Read more"
     }
   },
+  "LANDINGPAGE": {
+    "customers": {
+      "hero": {
+        "_badge": "For customers",
+        "_titleLine1": "Procure Across Europe.",
+        "_titleAccent": "Buy with Trust",
+        "_titleLine2": " Built In.",
+        "_desc": "Discover verified, sovereignty-ready digital services and use clear trust evidence to shortlist faster and procure with confidence.",
+        "_ctaPrimary": "Start your customer journey",
+        "_ctaSecondary": "Request more info"
+      }
+    }
+  },
   "GALLERY": {
     "_title": "Featured offerings",
     "_explore": "Explore marketplace",
