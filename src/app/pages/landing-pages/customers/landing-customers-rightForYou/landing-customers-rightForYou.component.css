@@ -16,11 +16,27 @@
 
 .right-for-you-watermark {
   position: absolute;
-  width: 511px;
-  height: auto;
   left: -124px;
   bottom: -142px;
+  width: 511px;
+  height: 511px;
   opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+
+  background-color: #DDE6F6;
+
+  mask-image: url('/assets/logos/DOME_Icon_White.svg');
+  -webkit-mask-image: url('/assets/logos/DOME_Icon_White.svg');
+
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+
+  mask-position: center;
+  -webkit-mask-position: center;
+
+  mask-size: contain;
+  -webkit-mask-size: contain;
 }
 
 .right-for-you-cards-col {

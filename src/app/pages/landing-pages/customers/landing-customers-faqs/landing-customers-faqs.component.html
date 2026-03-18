@@ -1,5 +1,5 @@
 <section class="faq-section w-full font-[Blinker]">
-  <div class="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-[160px] py-[64px] sm:py-[80px] lg:py-[100px]">
+  <div class="mx-auto w-full max-w-[1440px] px-5 py-[64px] sm:px-8 sm:py-[80px] lg:px-[160px] lg:py-[100px]">
     <div class="mx-auto flex w-full max-w-[1120px] flex-col gap-8 lg:gap-10">
 
       <h2 class="faq-heading">
@@ -15,16 +15,8 @@
             </span>
 
             <span class="faq-icon" [class.faq-icon--open]="isOpen(faq.id)">
-              @if (isOpen(faq.id)) {
-              <svg viewBox="0 0 24 24" class="h-6 w-6">
-                <path d="M6 12H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-              } @else {
-              <svg viewBox="0 0 24 24" class="h-6 w-6">
-                <path d="M12 6V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                <path d="M6 12H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-              }
+              <fa-icon [icon]="isOpen(faq.id) ? faMinus : faPlus">
+              </fa-icon>
             </span>
           </button>
 
@@ -33,33 +25,7 @@
               <div class="faq-divider"></div>
 
               <div class="faq-answer__content">
-                @if (faq.id === 'trustworthiness') {
-                <p>{{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.answerP1' | translate }}</p>
-
-                <p>{{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.answerP2' | translate }}</p>
-
-                <ul>
-                  <li>
-                    <strong>{{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.baselineTitle' | translate }}</strong>
-                    {{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.baselineText' | translate }}
-                  </li>
-                  <li>
-                    <strong>{{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.professionalTitle' | translate
-                      }}</strong>
-                    {{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.professionalText' | translate }}
-                  </li>
-                </ul>
-
-                <p>{{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.answerP3' | translate }}</p>
-
-                <p>
-                  {{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.answerP4a' | translate }}
-                  <strong>{{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.answerP4b' | translate }}</strong>
-                  {{ 'LANDINGPAGE.customers.faqs._items.trustworthiness.answerP4c' | translate }}
-                </p>
-                } @else {
-                <p>{{ faq.answerKey | translate }}</p>
-                }
+                <p [innerHTML]="faq.answerKey | translate"></p>
               </div>
             </div>
           </div>

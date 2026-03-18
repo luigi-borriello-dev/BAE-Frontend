@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faMinus, faPlus } from '@fortawesome/pro-solid-svg-icons';
 import { TranslateModule } from '@ngx-translate/core';
 
 type FaqItem = {
@@ -10,12 +12,16 @@ type FaqItem = {
 @Component({
   selector: "app-landing-customers-faqs",
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, FontAwesomeModule],
   templateUrl: "./landing-customers-faqs.component.html",
   styleUrl: "./landing-customers-faqs.component.css"
 })
 export class LandingCustomersFaqsComponent {
-  openFaqId = 'trustworthiness';
+
+  faPlus = faPlus;
+  faMinus = faMinus;
+
+  openFaqId = '';
 
   faqs: FaqItem[] = [
     {
@@ -26,7 +32,7 @@ export class LandingCustomersFaqsComponent {
     {
       id: 'trustworthiness',
       questionKey: 'LANDINGPAGE.customers.faqs._items.trustworthiness.question',
-      answerKey: 'LANDINGPAGE.customers.faqs._items.fee.answer'
+      answerKey: 'LANDINGPAGE.customers.faqs._items.trustworthiness.answer'
     },
     {
       id: 'fee',

@@ -212,36 +212,27 @@
         "_items": {
           "eligibility": {
             "question": "Am I eligible to use the DOME Marketplace as a customer?",
-            "answer": "Any organisation interested in discovering, comparing, and procuring digital services through the DOME Marketplace can register as a customer."
+            "answer": "-"
           },
           "trustworthiness": {
             "question": "How does DOME ensure the trustworthiness of the services listed on the Marketplace?",
-            "answerP1": "Services listed on the DOME Marketplace are evaluated against the DOME compliance framework.",
-            "answerP2": "Each service is assigned a compliance profile:",
-            "baselineTitle": "Baseline: ",
-            "baselineText": "Mandatory compliance via self-attestation.",
-            "professionalTitle": "Professional / Professional+: ",
-            "professionalText": "Verified certifications and compliance evidence.",
-            "answerP3": "This allows transparent comparison and better decisions.",
-            "answerP4a": "Services that do not meet the ",
-            "answerP4b": "Baseline Compliance Criteria",
-            "answerP4c": " are not published."
+            "answer": "Services listed on the DOME Marketplace are evaluated against the <b>DOME compliance framework</b>, which helps customers understand the level of compliance and supporting evidence behind each offering. Each service is assigned a compliance profile, such as: <br><br>- <b>Baseline</b>: The service meets the mandatory compliance requirements through provider self-attestation. <br>- <b>Professional / Professional+</b>: The service is supported by verified certifications and compliance evidence. <br><br>This structured approach allows customers to assess services more easily, compare offerings transparently, and select solutions that align with their compliance and governance requirements. Services that do not meet at least the <b>Baseline Compliance Criteria</b> are <b>not published</b> in the DOME catalogue."
           },
           "fee": {
             "question": "Do I need to pay a fee to become a DOME Marketplace customer?",
-            "answer": "Fees depend on the platform model and onboarding."
+            "answer": "/"
           },
           "process": {
             "question": "What is the process for becoming a DOME Marketplace customer?",
-            "answer": "Registration, verification and acceptance of terms."
+            "answer": "/"
           },
           "provider": {
-            "question": "Can I also be a provider?",
-            "answer": "Yes, after completing provider requirements."
+            "question": "I am registered as a DOME marketplace customer. Can I also be a service provider?",
+            "answer": "/"
           },
           "dispute": {
-            "question": "What happens in case of a dispute?",
-            "answer": "Resolution follows contractual and marketplace rules."
+            "question": "What happens in case of a dispute with a service provider?",
+            "answer": "/"
           }
         }
       },
