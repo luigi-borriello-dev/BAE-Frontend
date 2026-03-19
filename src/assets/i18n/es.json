@@ -217,27 +217,27 @@
         "_items": {
           "eligibility": {
             "question": "Am I eligible to use the DOME Marketplace as a customer?",
-            "answer": "-"
+            "answer": "<p>The DOME Marketplace is designed for <strong>organisations or professionals worldwide looking to procure trusted digital services in a transparent environment.</strong></p><p>You can use the DOME Marketplace if you represent:</p><ul><li><strong>Businesses (B2B)</strong> seeking cloud, edge, AI, or digital services</li><li><strong>Public sector organisations (B2G)</strong> such as public administrations, agencies, or research institutions</li><li><strong>Professional organisations</strong> purchasing digital services for operational use</li></ul><p>Or you are an <strong>individual</strong> acting within his/her trade, business or professional activities. That is, an individual not acting as a consumer.</p>"
           },
           "trustworthiness": {
             "question": "How does DOME ensure the trustworthiness of the services listed on the Marketplace?",
-            "answer": "Services listed on the DOME Marketplace are evaluated against the <b>DOME compliance framework</b>, which helps customers understand the level of compliance and supporting evidence behind each offering. Each service is assigned a compliance profile, such as: <br><br>- <b>Baseline</b>: The service meets the mandatory compliance requirements through provider self-attestation. <br>- <b>Professional / Professional+</b>: The service is supported by verified certifications and compliance evidence. <br><br>This structured approach allows customers to assess services more easily, compare offerings transparently, and select solutions that align with their compliance and governance requirements. Services that do not meet at least the <b>Baseline Compliance Criteria</b> are <b>not published</b> in the DOME catalogue."
+            "answer": "<p>Services listed on the DOME Marketplace are evaluated against the <strong>DOME compliance framework</strong>, which helps customers understand the level of compliance and supporting evidence behind each offering.</p><p>Each service is assigned a <strong>compliance profile</strong>, such as:</p><ul><li><strong>Baseline</strong> – The service meets the mandatory compliance requirements through provider self-attestation.</li><li><strong>Professional / Professional+</strong> – The service is supported by verified certifications and compliance evidence.</li></ul><p>This structured approach allows customers to assess services more easily, compare offerings transparently, and select solutions that align with their compliance and governance requirements.</p><p>Services that do not meet at least the <strong>Baseline Compliance Criteria</strong> are <strong>not published</strong> in the DOME catalogue.</p><p>You can find more information on the DOME Compliance framework <a href=\"https://knowledgebase.dome-marketplace.eu/books/dome-compliance-policy-v10\" target=\"_blank\" rel=\"noopener noreferrer\">here</a></p>"
           },
           "fee": {
             "question": "Do I need to pay a fee to become a DOME Marketplace customer?",
-            "answer": "/"
+            "answer": "<p><strong>No.</strong> There is no fee for organisations and professionals to join and use the DOME Marketplace as a customer.</p><p><em>Please note that DOME does not intervene in the commercial relationship or service delivery but only enables discovery, evaluation, and transactions between providers and customers.</em></p>"
           },
           "process": {
             "question": "What is the process for becoming a DOME Marketplace customer?",
-            "answer": "/"
+            "answer": "<p>Customer onboarding is completed in a single step. You provide:</p><ul><li>Company information (legal name, VAT, address, country)</li><li>Company Representative information (information of the person acting on behalf of the organisation)</li></ul><p>Once submitted, you receive your verifiable credentials and gain full access to the DOME platform.</p><p>If you are a professional (freelancer):</p><p>You onboard as an organisation. In this case, the company/legal name should match your professional name (as registered for your professional activity).</p>"
           },
           "provider": {
             "question": "I am registered as a DOME marketplace customer. Can I also be a service provider?",
-            "answer": "/"
+            "answer": "<p><strong>Yes.</strong> If you are already registered as a <strong>customer on the DOME Marketplace</strong>, you can also <strong>sell services</strong>. To do so, you simply need to <strong>complete the provider onboarding process</strong>.</p><p>Your existing company account remains the same. By completing the additional onboarding steps required for providers, such as submitting the necessary company information and documentation, you will gain the ability to <strong>publish and offer services on the marketplace</strong>.</p><p>Once the provider onboarding is completed and verified, your organisation will be able to <strong>both procure services and sell its own offerings on DOME</strong>. You can find more information <a href=\"landingpage/providers\" target=\"_blank\" rel=\"noopener noreferrer\">here</a> and onboard as a DOME marketplace provider.</p>"
           },
           "dispute": {
             "question": "What happens in case of a dispute with a service provider?",
-            "answer": "/"
+            "answer": "<p>Contracts for services are established <strong>directly between the customer and the provider</strong>. Any dispute related to pricing, service delivery, or contractual terms is therefore handled between the contracting parties, in accordance with the terms of their agreement and the applicable law.</p><p>DOME facilitates discovery and engagement between customers and providers and is <strong>not a party to the service contract</strong>. As such, DOME does not adjudicate contractual disputes but may, where appropriate, facilitate communication between the parties.</p>"
           }
         }
       },

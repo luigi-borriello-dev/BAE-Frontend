@@ -5,7 +5,7 @@ const domeHeaderLinks: NavLink[] = [
 
   {
     label: 'HEADER._forCustomers',
-    url: 'https://onboard.sbx.evidenceledger.eu/register-customer'
+    url: 'landing-page/customers'
 
   },
   {
