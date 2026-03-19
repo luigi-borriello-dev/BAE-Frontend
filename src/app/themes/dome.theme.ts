@@ -45,7 +45,9 @@ const domeFooterLinks: NavHeaderLink[] = [
     label: 'FOOTER.aboutTitle',
     navLinks: [
       { label: 'FOOTER.domeProject', url: 'https://dome-project.eu/', isRouterLink: false },
-      { label: 'FOOTER.contactUs', url: '/contact-us', isRouterLink: true }
+      { label: 'FOOTER.contactUs', url: '/contact-us', isRouterLink: true },
+      { label: 'Feedback' },
+      { label: 'Newsletter', url: 'https://www.linkedin.com/newsletters/newsletter-7142535480692133889/', isRouterLink: false }
     ]
   },
   {
