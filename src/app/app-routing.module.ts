@@ -139,8 +139,15 @@ const routes: Routes = [
   },
 
   {
-    path: 'landing-page/customers',
-    loadComponent: () => import('./pages/landing-pages/customers/landing-page-customers.component').then(c => c.LandingPageCustomersComponent)
+    path: 'landing-page',
+    children: [{
+      path: 'customers',
+      loadComponent: () => import('./pages/landing-pages/customers/landing-page-customers.component').then(c => c.LandingPageCustomersComponent),
+    },
+    {
+      path: 'providers',
+      loadComponent: () => import('./pages/landing-pages/providers/landing-page-providers.component').then(c => c.LandingPageProvidersComponent),
+    }]
   },
 
   { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },

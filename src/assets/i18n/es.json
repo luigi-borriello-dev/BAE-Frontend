@@ -212,6 +212,176 @@
     }
   },
   "LANDINGPAGE": {
+    "providers": {
+      "badge": "For providers",
+      "titleLine1": "Scale Across Europe.",
+      "titleHighlight": "Sell with Trust",
+      "titleLine2": " Built In.",
+      "description": "Get discovered by organisations actively seeking sovereign, compliant, EU-based digital solutions — and give them the trust evidence they need to shortlist you faster.",
+      "primaryCta": "Start Provider onboarding",
+      "secondaryCta": "Request more info",
+      "trust": {
+        "titleStart": "Turn ",
+        "titleHighlight": "Trust & Sovereignty",
+        "titleLine2": "Into Competitive",
+        "titleLine3": "Advantage",
+        "description": "European buyers increasingly require trusted and compliant digital services. DOME helps providers turn these expectations into visible commercial advantages.",
+        "cards": {
+          "euBasedProviders": {
+            "title": "EU-Based Providers",
+            "description": "Position your services as a trusted European alternative."
+          },
+          "transparency": {
+            "title": "Transparency",
+            "description": "Security, Compliance & Trust: Make certifications and trust signals visible to buyers."
+          },
+          "trustedSourcing": {
+            "title": "Trusted sourcing",
+            "description": "Structured procurement ensuring trust, comparability, and transparency for buyers."
+          },
+          "dataSovereignty": {
+            "title": "Data Sovereignty",
+            "description": "Demonstrate where and how data is handled and protected."
+          }
+        }
+      },
+      "whyJoinDome": {
+        "title": "Why join DOME?",
+        "subtitle": "This is a first-mover opportunity in a federated European marketplace built around trust.",
+        "cards": {
+          "data": {
+            "title": "Data",
+            "highlight": "sovereignty",
+            "description": "Respond to growing customer demands around security, compliance and data sovereignty."
+          },
+          "trust": {
+            "title": "Trust",
+            "highlight": "visibility",
+            "description": "Present the evidence customers need to assess your service with confidence."
+          },
+          "easier": {
+            "title": "Easier",
+            "highlight": "evaluation",
+            "description": "Help customers understand, compare and shortlist your service."
+          },
+          "market": {
+            "title": "Market",
+            "highlight": "reach",
+            "description": "Connect with new customers and expand across multiple European markets."
+          }
+        }
+      },
+      "goodFit": {
+        "titleStart": "Are You a ",
+        "titleAccent": "Good Fit",
+        "titleEnd": "?",
+        "description": "If your value proposition includes compliance, transparency, EU data handling, or digital sovereignty — DOME strengthens it.",
+        "cards": {
+          "cloud": {
+            "title": "Cloud, Edge & Infrastructure Providers",
+            "desc": "IaaS, PaaS, sovereign cloud, edge computing, managed infrastructure services operating in Europe."
+          },
+          "saas": {
+            "title": "B2B SaaS & Software Providers",
+            "desc": "Enterprise and vertical SaaS, data, AI, cybersecurity, DevOps, and compliance-relevant software serving professional customers."
+          },
+          "deepTech": {
+            "title": "Deep-Tech Startups, Scale-ups & SMEs",
+            "desc": "European B2B technology providers (AI, data, edge, IoT, HPC) competing on quality, trust, and innovation."
+          },
+          "publicSector": {
+            "title": "Public-Sector & Regulated-Market Specialists",
+            "desc": "Vendors specialised in public administration, healthcare, finance, energy, telecom, transport, or critical infrastructure."
+          }
+        }
+      },
+      "procureSteps": {
+        "title": "Procure in a <span class='text-[#2D58A7]'>few steps</span>",
+        "subtitle": "A simple, structured journey from discovery to procurement — built for trust at every stage.",
+        "steps": {
+          "step1": "Create your provider profile",
+          "step2": "Verify your organisation",
+          "step3": "Publish your services",
+          "step4": "Start receiving requests"
+        }
+      },
+      "included": {
+        "title": "What's Included for Providers",
+        "cards": {
+          "onboarding": {
+            "title": "Qualified Onboarding",
+            "description": "Guided onboarding, organisation verification, and trust credentials."
+          },
+          "procurement": {
+            "title": "Procurement-ready listings",
+            "description": "Structured service listings built for instant procurement."
+          },
+          "trust": {
+            "title": "Trust Frameworks",
+            "description": "Standardised trust indicators (with supporting evidence) for security, certifications, and data-handling claims."
+          },
+          "performance": {
+            "title": "Performance insights",
+            "description": "Reporting and Analytics dashboard covering visibility, engagement, commercial and financial performance."
+          },
+          "advanced": {
+            "title": "Advanced procurement tools",
+            "description": "Tailored offer requests and structured tender-like sourcing flows."
+          },
+          "commercial": {
+            "title": "Commercial enablement",
+            "description": "Usage tracking, billing/invoicing support, and revenue-share calculation aligned with marketplace rules."
+          },
+          "operational": {
+            "title": "Operational support",
+            "description": "Customer Support, Knowledge base, training materials."
+          },
+          "marketing": {
+            "title": "Marketing support",
+            "description": "Marketplace-led promotion to increase visibility and demand."
+          },
+          "federated": {
+            "title": "Federated European reach",
+            "description": "Catalogue distribution across connected marketplaces via federation."
+          }
+        }
+      },
+      "faqs": {
+        "title": "FAQs",
+        "_items": {
+          "1": {
+            "question": "Am I eligible to become a DOME Marketplace provider?",
+            "answer": "To join the DOME Marketplace as a service provider, your organisation must meet the following criteria:<ul class='list-disc pl-6 mt-4 space-y-3'><li><strong>EU/EEA establishment:</strong> Your organisation must be a legally registered entity within the EU/EEA, or have a legal entity established in the EU/EEA (e.g., a subsidiary, branch, or other registered entity).</li><li><strong>Service ownership:</strong> You must offer cloud, edge, or digital services that your organisation owns and operates, not acting solely as a reseller of third-party services.</li><li><strong>B2B/B2G focus:</strong> Your target customers must be businesses, public organisations, or professionals, not individual consumers.</li></ul>"
+          },
+          "2": {
+            "question": "Are my services eligible to be listed on the DOME Marketplace?",
+            "answer": "Your services are eligible to be listed if they meet the mandatory compliance criteria defined by the DOME compliance framework.<br><br>DOME applies the following compliance profiles:<ul class='list-disc pl-6 mt-4 space-y-3'><li><strong>Baseline:</strong> Your offering can be listed with a Baseline status if it meets the mandatory criteria through self-attestation (self-assessed compliance), even if it does not have formal certifications.</li><li><strong>Professional / Professional+:</strong> Your offering may qualify for Professional or Professional+ if it is supported by certified compliance evidence (valid certifications). The level achieved depends on the type and number of valid certifications, in line with DOME requirements.</li><li><strong>Non-compliant:</strong> If your offering fails one or more mandatory compliance criteria—based on self-attestation and/or certification checks—it is classified as non-compliant and cannot be published in the official DOME catalogue.</li></ul><br>Services published on DOME must meet at least the <strong>Baseline</strong> compliance requirements.<br><br>More information on the compliance profiles and their criteria can be found <a href='https://knowledgebase.dome-marketplace.eu/books/dome-compliance-policy-v10' target='_blank' class='text-[#2D58A7] underline'>here</a>."
+          },
+          "3": {
+            "question": "Do I need to pay a fee to become a DOME Marketplace provider?",
+            "answer": "No. There is currently no upfront fee to join the DOME Marketplace.<br>DOME operates on a revenue-sharing model, meaning providers only pay a small fee when a service is successfully sold through the DOME marketplace.<br><br><em>Please note that DOME does not intervene in the commercial relationship or service delivery but only enables discovery, evaluation, and transactions between providers and customers.</em><br><br>You can find more information on the DOME pricing model <a href='https://knowledgebase.dome-marketplace.eu/books/dome-marketplace-pricing-for-providers' target='_blank' class='text-[#2D58A7] underline'>here</a>."
+          },
+          "4": {
+            "question": "What information and documentation are required to onboard DOME as a provider?",
+            "answer": "To onboard as a provider, you will be asked to provide basic organisational details, nominate key roles, and submit supporting documentation for verification.<br><br><strong>Required information</strong><ul class='list-disc pl-6 mt-4 space-y-3'><li><strong>Company information:</strong> Legal name, VAT number, country, city, registered office address, postal code</li><li><strong>Legal Representative information:</strong> Identification and contact details of the individual legally representing the company</li><li><strong>Account Administrator information:</strong> Identification and contact details of the individual responsible for managing the organisation’s account on DOME (this can also be the same person as the Legal Representative)</li></ul><br><strong>Required documentation</strong><br><br>You have to provide the Account Administrator Appointment form duly signed.<br><br>If the Appointment form is signed using an eIDAS for legal entity representatives certificate, nothing additional is required from your side. Otherwise, you have to additionally provide evidence of the existence of the company and the capacity to represent the company of the Legal Representative. Typically, this is achieved through the submission of a <strong>Certificate of Incorporation of the company</strong>, clearly indicating the legal representatives authorised to represent the company. If this information is not reflected in the incorporation document, an additional <strong>Power of Attorney</strong> (or equivalent document) must be provided. When the original documentation is not issued in English, you will have to submit an English translation of the said documents."
+          },
+          "5": {
+            "question": "What is the process for becoming a DOME Marketplace provider?",
+            "answer": "The onboarding process is straightforward and can be completed in <strong>two steps</strong>:<br><br><strong>Step 1 – Self-registration</strong><br>You can quickly create a company account and access the platform. Once you receive your verifiable credentials, you can browse the marketplace, review existing offerings, prices and commercial models, even procure services while starting drafting your own service listings. This step allows you to explore and prepare, but it does <strong>not</strong> allow you to publish services or sell through the marketplace.<br><br><strong>Step 2 – Full onboarding</strong><br>To publish services and start selling through the DOME Marketplace, you must complete the full onboarding process by submitting the required company and role information, along with the supporting documentation described above. Once verification is completed and your onboarding is approved, your organisation can publish its services and start selling on the DOME Marketplace."
+          },
+          "6": {
+            "question": "I am registered as a DOME marketplace provider. Can I also procure services?",
+            "answer": "<strong>Yes.</strong> If you are registered as a provider on the DOME Marketplace, your organisation can also procure services as a customer. The same company account can be used to browse, request offers, and purchase services from other providers on the platform."
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to <span class='text-[#10B7E8]'>grow your business</span> across Europe?",
+        "subtitle": "Join DOME Marketplace — built for trusted digital service procurement in Europe",
+        "primaryButton": "Start Provider onboarding",
+        "secondaryButton": "Request more info"
+      }
+    },
     "customers": {
       "faqs": {
         "title": "FAQs",
