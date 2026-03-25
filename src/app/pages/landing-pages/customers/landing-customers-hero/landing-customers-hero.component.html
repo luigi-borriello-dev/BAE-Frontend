@@ -26,15 +26,21 @@
       </p>
 
       <div class="flex w-full flex-col gap-4 pt-4 sm:w-auto sm:flex-row sm:gap-6 sm:pt-8">
-        <a href="#"
-          class="inline-flex h-14 min-w-[262px] items-center justify-center rounded-[8px] bg-[#2D58A7] px-6 text-center text-[18px] font-semibold leading-[22px] text-white transition hover:brightness-110 active:brightness-95">
+
+        <a [href]="url()"
+          class="inline-flex h-14 min-w-[262px] items-center justify-center rounded-[8px] bg-[#2D58A7] px-6 text-center text-[18px] font-semibold leading-[22px] text-white transition-colors duration-200 hover:bg-[#18B5D9]">
+
           {{ 'LANDINGPAGE.customers.hero._ctaPrimary' | translate }}
+
         </a>
 
         <a href="#"
-          class="inline-flex h-14 min-w-[262px] items-center justify-center rounded-[8px] border-[3px] border-[#2D58A7] px-6 text-center text-[18px] font-semibold leading-[22px] text-white transition hover:bg-white/5 active:bg-white/10">
+          class="inline-flex h-14 min-w-[262px] items-center justify-center rounded-[8px] border-[3px] border-[#2D58A7] px-6 text-center text-[18px] font-semibold leading-[22px] text-white transition-colors duration-200 hover:bg-[#5B6F8E]">
+
           {{ 'LANDINGPAGE.customers.hero._ctaSecondary' | translate }}
+
         </a>
+
       </div>
     </div>
   </div>

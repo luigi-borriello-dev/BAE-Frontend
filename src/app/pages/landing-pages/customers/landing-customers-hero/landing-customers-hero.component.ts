@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, input } from "@angular/core";
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -9,5 +9,5 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: "./landing-customers-hero.component.css"
 })
 export class LandingCustomersHeroComponent {
-
+  url = input.required<string>();
 }
