@@ -18,6 +18,12 @@ type ProviderGoodFitCard = {
   styleUrl: "./landing-providers-fit.component.css"
 })
 export class LandingPageProvidersFitComponent {
+  get scrollHeight(): number {
+    if (window.innerWidth < 768) return 460
+    if (window.innerWidth < 1280) return 540
+    return 636
+  }
+
   cards: ProviderGoodFitCard[] = [
     {
       titleKey: "LANDINGPAGE.providers.goodFit.cards.cloud.title",

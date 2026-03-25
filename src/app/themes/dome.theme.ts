@@ -10,7 +10,7 @@ const domeHeaderLinks: NavLink[] = [
   },
   {
     label: 'HEADER._forProviders',
-    url: 'https://onboard.sbx.evidenceledger.eu/register-provider'
+    url: 'landing-page/providers'
   },
   {
     id: 'dropdown-marketplace',
@@ -60,12 +60,12 @@ const domeFooterLinks: NavHeaderLink[] = [
       },
       {
         label: 'FOOTER.forCustomers',
-        url: '#for-customers',
+        url: 'landing-page/customers',
         isRouterLink: true
       },
       {
         label: 'FOOTER.forProviders',
-        url: '#for-providers',
+        url: 'landing-page/providers',
         isRouterLink: true
       },
     ],

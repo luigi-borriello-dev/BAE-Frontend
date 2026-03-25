@@ -28,6 +28,13 @@ type RightForYouCard = {
   styleUrl: "./landing-customers-rightForYou.component.css"
 })
 export class LandingpageCustomersRightForYouComponent {
+
+  get scrollHeight(): number {
+    if (window.innerWidth < 768) return 460
+    if (window.innerWidth < 1280) return 540
+    return 636
+  }
+
   cards: RightForYouCard[] = [
     {
       titleKey: "LANDINGPAGE.customers.rightForYou._regulatedIndustriesTitle",

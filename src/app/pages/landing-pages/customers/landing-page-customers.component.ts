@@ -16,5 +16,5 @@ import { LandingpageCustomersWhyJoinComponent } from "./landing-customers-whyJoi
   styleUrl: "./landing-page-customers.component.css"
 })
 export class LandingPageCustomersComponent {
-
+  ONBOARDING_CUSTOMERS_LINK = "https://onboard.sbx.evidenceledger.eu/register-customer";
 }
