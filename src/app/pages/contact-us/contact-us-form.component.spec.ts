@@ -117,7 +117,7 @@ describe("ContactUsFormComponent", () => {
     expect(component.hasError("email")).toBeTrue();
   });
 
-  it("should validate privacyAccepted with requiredTrue", () => {
+  it("should validate privacyAccepted", () => {
     component.f.privacyAccepted.setValue(false);
     component.f.privacyAccepted.markAsTouched();
     component.f.privacyAccepted.updateValueAndValidity();
@@ -140,11 +140,13 @@ describe("ContactUsFormComponent", () => {
     expect(component.form.valid).toBeTrue();
   });
 
-  it("should set submitted to true and not call service if form is invalid", () => {
+  it("should set submitted to true and not call mailTo if form is invalid", () => {
+    const mailToSpy = spyOn(component, "mailTo");
+
     component.onSubmit();
 
     expect(component.submitted).toBeTrue();
-    expect(contactUsServiceSpy.sendEmail).not.toHaveBeenCalled();
+    expect(mailToSpy).not.toHaveBeenCalled();
     expect(component.submittedSuccessfully).toBeFalse();
   });
 
@@ -160,22 +162,48 @@ describe("ContactUsFormComponent", () => {
     expect(component.f.privacyAccepted.touched).toBeTrue();
   });
 
-  it("should call sendEmail with raw form value when form is valid", () => {
+  it("should call mailTo and set submittedSuccessfully to true when form is valid", () => {
+    fillValidForm();
+    const mailToSpy = spyOn(component, "mailTo");
+
+    component.onSubmit();
+
+    expect(mailToSpy).toHaveBeenCalled();
+    expect(component.submittedSuccessfully).toBeTrue();
+    expect(contactUsServiceSpy.sendEmail).not.toHaveBeenCalled();
+  });
+
+  it("should call sendEmail with raw form value when sendMail is invoked", () => {
     fillValidForm();
     contactUsServiceSpy.sendEmail.and.returnValue(of(sendEmailResponse) as any);
 
-    component.onSubmit();
+    component.sendMail();
 
     expect(contactUsServiceSpy.sendEmail).toHaveBeenCalledOnceWith(validFormValue);
   });
 
-  it("should set submittedSuccessfully to true when sendEmail succeeds", () => {
+  it("should set submittedSuccessfully to true when sendMail succeeds", () => {
     fillValidForm();
     contactUsServiceSpy.sendEmail.and.returnValue(of(sendEmailResponse) as any);
 
-    component.onSubmit();
+    component.sendMail();
 
     expect(component.submittedSuccessfully).toBeTrue();
+  });
+
+  it("should build the correct mailto link", () => {
+    fillValidForm();
+
+    expect(component.buildMailtoLink()).toBe(
+      "mailto:info@dome-marketplace.eu?body=First name: Luigi%0A" +
+      "Last name: Borriello%0A" +
+      "Email: luigi@test.com%0A" +
+      "Organization: OpenAI%0A" +
+      "Role: Senior Angular Developer%0A" +
+      "Marketing consent: false%0A" +
+      "Privacy: true%0A" +
+      "Test message"
+    );
   });
 
   it("should reset form and flags and navigate to dashboard on continue browsing", () => {
@@ -215,12 +243,12 @@ describe("ContactUsFormComponent", () => {
     expect(completeSpy).toHaveBeenCalled();
   });
 
-  it("should unsubscribe active request on destroy", () => {
+  it("should unsubscribe active sendMail request on destroy", () => {
     const response$ = new Subject<ISendEmail>();
     contactUsServiceSpy.sendEmail.and.returnValue(response$.asObservable() as any);
 
     fillValidForm();
-    component.onSubmit();
+    component.sendMail();
 
     fixture.destroy();
 

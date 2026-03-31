@@ -7,12 +7,12 @@ import {
   ReactiveFormsModule,
   Validators
 } from "@angular/forms";
-import { Router } from '@angular/router';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faThumbsUp } from '@fortawesome/pro-regular-svg-icons';
+import { Router } from "@angular/router";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { faThumbsUp } from "@fortawesome/pro-regular-svg-icons";
 import { TranslateModule } from "@ngx-translate/core";
-import { Subject, takeUntil } from 'rxjs';
-import { ContactUsService } from '../../services/contactUs.service';
+import { Subject, takeUntil } from "rxjs";
+import { ContactUsService } from "../../services/contactUs.service";
 
 export interface IContactUs {
   firstName: string;
@@ -44,7 +44,7 @@ export type IContactUsForm = {
 export class ContactUsFormComponent implements OnDestroy {
   private readonly fb = inject(FormBuilder);
   private readonly router = inject(Router);
-  private readonly contactUsService = inject(ContactUsService)
+  private readonly contactUsService = inject(ContactUsService);
 
   faThumbsUp = faThumbsUp;
 
@@ -81,12 +81,47 @@ export class ContactUsFormComponent implements OnDestroy {
       return;
     }
 
+    this.mailTo();
+    this.submittedSuccessfully = true;
+  }
 
-    this.contactUsService.sendEmail(this.form.getRawValue()).pipe(takeUntil(this.unsub)).subscribe({
+  sendMail(): void {
+    this.contactUsService.sendEmail(this.form.getRawValue()).pipe(
+      takeUntil(this.unsub)
+    ).subscribe({
       next: () => {
         this.submittedSuccessfully = true;
-      },
+      }
     });
+  }
+
+  buildMailtoLink(): string {
+    const {
+      firstName,
+      lastName,
+      email,
+      marketingAccepted,
+      message,
+      organization,
+      privacyAccepted,
+      roleInOrganization
+    } = this.form.getRawValue();
+
+    const body =
+      "First name: " + firstName + "%0A" +
+      "Last name: " + lastName + "%0A" +
+      "Email: " + email + "%0A" +
+      "Organization: " + organization + "%0A" +
+      "Role: " + roleInOrganization + "%0A" +
+      "Marketing consent: " + marketingAccepted + "%0A" +
+      "Privacy: " + privacyAccepted + "%0A" +
+      message;
+
+    return `mailto:info@dome-marketplace.eu?body=${body}`;
+  }
+
+  mailTo(): void {
+    window.location.href = this.buildMailtoLink();
   }
 
   onContinueBrowsing(): void {
@@ -103,7 +138,7 @@ export class ContactUsFormComponent implements OnDestroy {
       marketingAccepted: false
     });
 
-    this.router.navigate(['/dashboard'])
+    this.router.navigate(["/dashboard"]);
   }
 
   ngOnDestroy(): void {
