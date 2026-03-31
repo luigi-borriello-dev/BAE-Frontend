@@ -110,7 +110,9 @@ describe("ContactUsFormComponent", () => {
   it("should validate invalid email", () => {
     component.f.email.setValue("abc");
     component.f.email.markAsTouched();
+    component.f.email.updateValueAndValidity();
 
+    expect(component.f.email.invalid).toBeTrue();
     expect(component.f.email.hasError("email")).toBeTrue();
     expect(component.hasError("email")).toBeTrue();
   });
@@ -118,8 +120,18 @@ describe("ContactUsFormComponent", () => {
   it("should validate privacyAccepted with requiredTrue", () => {
     component.f.privacyAccepted.setValue(false);
     component.f.privacyAccepted.markAsTouched();
+    component.f.privacyAccepted.updateValueAndValidity();
 
-    expect(component.f.privacyAccepted.hasError("requiredTrue")).toBeTrue();
+    expect(component.f.privacyAccepted.invalid).toBeTrue();
+    expect(component.f.privacyAccepted.hasError("required")).toBeTrue();
+  });
+
+  it("should accept privacyAccepted when true", () => {
+    component.f.privacyAccepted.setValue(true);
+    component.f.privacyAccepted.updateValueAndValidity();
+
+    expect(component.f.privacyAccepted.valid).toBeTrue();
+    expect(component.f.privacyAccepted.hasError("required")).toBeFalse();
   });
 
   it("should be valid when form is correctly filled", () => {
