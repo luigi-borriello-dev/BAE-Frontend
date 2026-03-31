@@ -4,7 +4,7 @@ import { delay, Observable, of } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { IContactUs } from '../pages/contact-us/contact-us-form.component';
 
-interface ISendEmail {
+export interface ISendEmail {
   form: IContactUs
 }
 
@@ -20,7 +20,18 @@ export class ContactUsService {
 
   sendEmail(form: IContactUs): Observable<ISendEmail> {
     if (this.debug) {
-      return of().pipe(delay(3000));
+      return of({
+        form: {
+          firstName: "",
+          lastName: "",
+          email: "",
+          organization: "",
+          roleInOrganization: "",
+          message: "",
+          privacyAccepted: false,
+          marketingAccepted: false
+        }
+      }).pipe(delay(3000));
     }
 
     return this.http.post<ISendEmail>(`${this.BASE_URL}/to-do`, form);

@@ -107,7 +107,7 @@ export class ContactUsFormComponent implements OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.unsub.next();
     this.unsub.complete();
-    this.unsub.unsubscribe();
   }
 }
